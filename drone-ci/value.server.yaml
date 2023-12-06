@@ -1,0 +1,12 @@
+# value from: https://github.com/drone/charts/blob/master/charts/drone/values.yaml
+image:
+  registry: docker.io
+  repository: drone/drone
+  tag: 1.6.5
+  pullPolicy: IfNotPresent
+
+env:
+  DRONE_SERVER_HOST: playground.drone.local:8089
+
+extraSecretNamesForEnvFrom:
+  - drone-server-secret

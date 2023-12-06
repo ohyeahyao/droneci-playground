@@ -1,0 +1,10 @@
+# value from: https://github.com/drone/charts/blob/master/charts/drone/values.yaml
+image:
+  registry: docker.io
+  repository: drone/drone-runner-docker
+  pullPolicy: IfNotPresent
+  # Overrides the image tag whose default is the chart appVersion.
+  tag: 1.8.1
+
+extraSecretNamesForEnvFrom:
+  - drone-server-secret
