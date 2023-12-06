@@ -12,7 +12,7 @@
          "name": "test"
       }
    ],
-   "type": "kubernetes"
+   "type": "docker"
 }
 ---
 {
@@ -28,5 +28,5 @@
          "name": "test"
       }
    ],
-   "type": "kubernetes"
+   "type": "docker"
 }
