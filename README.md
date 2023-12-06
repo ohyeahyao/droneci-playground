@@ -2,7 +2,7 @@
 
 ```
 kubectl create ns drone
-kubectl apply -n drone -f drone-server/secret.yaml
+kubectl apply -n drone -f drone-ci/secret.yaml
 ```
 
 ## Deploy Server & Runner
@@ -11,10 +11,10 @@ kubectl apply -n drone -f drone-server/secret.yaml
 helm repo add drone https://charts.drone.io
 
 # server
-helm upgrade -i drone drone/drone -n drone -f drone-server/value.server.yaml
+helm upgrade -i drone drone/drone -n drone -f drone-ci/value.server.yaml
 
 # runner
-helm upgrade -i drone-runner-docker drone/drone-runner-docker -n drone -f drone-server/value.runner-docker.yaml
+helm upgrade -i drone-runner-docker drone/drone-runner-docker -n drone -f drone-ci/value.runner-docker.yaml
 ```
 
 ## Forward Drone to Local
