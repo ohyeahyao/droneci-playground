@@ -1,0 +1,32 @@
+---
+{
+   "kind": "pipeline",
+   "name": "rust-1-29",
+   "steps": [
+      {
+         "commands": [
+            "cargo build --verbose --all",
+            "cargo test --verbose --all"
+         ],
+         "image": "rust:1.29",
+         "name": "test"
+      }
+   ],
+   "type": "kubernetes"
+}
+---
+{
+   "kind": "pipeline",
+   "name": "rust-1-30",
+   "steps": [
+      {
+         "commands": [
+            "cargo build --verbose --all",
+            "cargo test --verbose --all"
+         ],
+         "image": "rust:1.30",
+         "name": "test"
+      }
+   ],
+   "type": "kubernetes"
+}
