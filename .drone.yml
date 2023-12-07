@@ -9,7 +9,7 @@
             "cargo build --verbose --all",
             "cargo test --verbose --all"
          ],
-         "image": "rust:1.30",
+         "image": "rust:1.74",
          "name": "test"
       }
    ],
