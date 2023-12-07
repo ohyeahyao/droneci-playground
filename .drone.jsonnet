@@ -7,6 +7,7 @@ local Pipeline(name, image) = {
       name: "test",
       image: image,
       commands: [
+        "cd app",
         "cargo build --verbose --all",
         "cargo test --verbose --all"
       ]
