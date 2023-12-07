@@ -1,6 +1,6 @@
 local Pipeline(name, image) = {
   kind: "pipeline",
-  type: "docker",
+  type: "kubernetes",
   name: name,
   steps: [
     {

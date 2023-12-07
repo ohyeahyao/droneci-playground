@@ -12,5 +12,5 @@
          "name": "test"
       }
    ],
-   "type": "docker"
+   "type": "kubernetes"
 }
