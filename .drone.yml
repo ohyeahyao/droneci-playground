@@ -1,7 +1,7 @@
 ---
 {
    "kind": "pipeline",
-   "name": "rust-1-30",
+   "name": "rust-1-74",
    "steps": [
       {
          "commands": [

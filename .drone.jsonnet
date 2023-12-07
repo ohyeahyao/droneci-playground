@@ -17,5 +17,5 @@ local Pipeline(name, image) = {
 
 [
   // Pipeline("rust-1-29", "rust:1.29"),
-  Pipeline("rust-1-30", "rust:1.30"),
+  Pipeline("rust-1-74", "rust:1.30"),
 ]
